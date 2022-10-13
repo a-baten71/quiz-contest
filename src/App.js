@@ -7,6 +7,7 @@ import Topics from './component/Topics/Topics';
 
 
 function App() {
+  
   const router = createBrowserRouter([
     {
       path: '/',

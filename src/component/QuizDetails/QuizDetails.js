@@ -9,14 +9,14 @@ const QuizDetails = () => {
     // console.log(topic.data.name)
    
     
-    console.log(topic.questions)
+    // console.log(topic.questions)
     return (
         
             
                 
         <div>
             {
-                topic.questions.map(eachQus => <QuizLayout eachQus={eachQus}></QuizLayout>)
+                topic.questions.map(eachQus => <QuizLayout key={eachQus.id} eachQus={eachQus}></QuizLayout>)
             }
       </div>
                 
