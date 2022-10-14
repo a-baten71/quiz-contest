@@ -5,24 +5,26 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const Answer = ({ options, correctAnswer }) => {
 
-    const handleChange = (event) => {
+    const SelectAnswer = (event) => {
         // console.log(options.option)
-        // console.log(correctAnswer)
+        console.log(correctAnswer)
         if (event.target.value === correctAnswer) {
             toast("Correct Answer!");
+            // console.log(true)
         }
         else {
             toast("Wrong Answer")
+            console.log(false)
         }
 
     };
 
 
     return (
-        <div className='grid grid-cols-4 gap-12 my-8 '>
+        <div className=' gap-12 my-8 '>
             {
                 options.map((option, idx) => <p className='m-4 py-6 px-2 bg-indigo-400 text-left' key={idx}>
-                    <input onClick={handleChange} className='' type="radio" name="quiz" id={option} value={option} />
+                    <input onClick={SelectAnswer} className='' type="radio" name="quiz" id={option} value={option} />
                     <label className='ml-3' htmlFor={option}>{option}</label>
                 </p>)
 

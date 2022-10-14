@@ -3,6 +3,7 @@ import './App.css';
 import Home from './component/Home/Home';
 import Main from './component/Main/Main';
 import QuizDetails from './component/QuizDetails/QuizDetails';
+
 import Topics from './component/Topics/Topics';
 
 

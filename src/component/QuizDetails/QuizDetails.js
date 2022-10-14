@@ -26,4 +26,5 @@ const QuizDetails = () => {
     );
 };
 
+
 export default QuizDetails;
