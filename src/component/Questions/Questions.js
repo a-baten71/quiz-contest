@@ -11,7 +11,7 @@ const Questions = ({question, correctAnswer}) => {
     }
   console.log(question)
     return (
-        <div className=''>
+        <div className=' text-black '>
             <h2 className='flex justify-center'>Quiz: {question} <EyeIcon onClick={CorrectAns} className="h-6 w-6 ml-12 text-black"/></h2>
             
 
