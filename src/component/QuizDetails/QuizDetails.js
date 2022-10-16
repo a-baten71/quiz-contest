@@ -8,7 +8,7 @@ const QuizDetails = () => {
 topic = topic.data;
 
     return (
-        <div className=' w-9/12 mx-auto  bg-slate-400'>
+        <div className=' w-9/12 mx-auto'>
         {
             topic.questions.map(eachQus => <QuizLayout key={eachQus.id} eachQus={eachQus}></QuizLayout>)
         }

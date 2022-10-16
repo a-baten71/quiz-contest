@@ -6,8 +6,8 @@ import ScoreBoard from '../ScoreBoard/ScoreBoard';
 const Header = () => {
     const [open, setOpen] = useState(false)
     return (
-        <div className='w-3/4 mx-auto '>
-            <div className='h-20 w-full bg-slate-500 '>
+        <div className='w-3/4 mx-auto'>
+            <div className='h-20 w-full bg-slate-500 flex justify-around items-center'>
                 <div onClick={() => setOpen(!open)} className="md:hidden">
                     {
                         open ? <XMarkIcon className="h-6 w-6 " /> : <Bars3Icon className="h-6 w-6" />
